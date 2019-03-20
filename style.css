@@ -1,6 +1,23 @@
-h1{
+body{
     font-family: Poppins; 
     text-align: center;
-    font-size: 50px;
     font-weight: bold;
+    background-image: url(./bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: bold;
+}
+#overlay{
+    background-color: rgba(145, 136, 136, 0.5); 
+    padding-bottom: 3.95rem;  
+}
+h1{
+    padding: 2rem 0 2rem 0;
+}
+h3{
+    padding: 2rem 0 2rem 0;
+}
+.btn{
+padding: 1rem;
+margin: 2rem;
 }

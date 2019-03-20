@@ -1,2 +1,3 @@
 # devnoorfatima.github.io
-Portfolio website
+Portfolio website isn't ready yet.
+I've made my projects live.
