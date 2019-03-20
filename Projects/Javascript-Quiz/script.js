@@ -161,8 +161,17 @@
       `;
     if(numCorrect >=5){
       resultsContainer.style.color='lightgreen';
+      quizContainer.innerHTML= 'You Passed It..';
+      quizContainer.style.fontSize="35px";
+      quizContainer.style.color="lightgreen";
+      submitButton.style.display="none";
+      previousButton.style.display="none";
     }else {
       resultsContainer.style.color='red';
+      quizContainer.innerHTML= 'No Worries Try Again';
+      quizContainer.style.fontSize="35px";
+      submitButton.style.display="none";
+      previousButton.style.display="none";
     }
     
     }
@@ -186,7 +195,6 @@
         submitButton.style.display = "none";
       }
     }
-  
     function showNextSlide() {
       showSlide(currentSlide + 1);
     }
@@ -194,11 +202,10 @@
     function showPreviousSlide() {
       showSlide(currentSlide - 1);
     }
-  
-    const quizContainer = document.getElementById("quiz");
-    const resultsContainer = document.getElementById("results");
-    const submitButton = document.getElementById("submit");
-  
+    let quizContainer = document.getElementById("quiz");
+    let resultsContainer = document.getElementById("results");
+    let submitButton = document.getElementById("submit");
+
     // display quiz right away
     buildQuiz();
   
