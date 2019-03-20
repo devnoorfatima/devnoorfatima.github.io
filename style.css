@@ -2,14 +2,11 @@ body{
     font-family: Poppins; 
     text-align: center;
     font-weight: bold;
-    background-image: url(./bg.jpeg);
+    background:linear-gradient(0deg,rgba(75, 73, 74, 0.5),rgba(75, 72, 73, 0.5)),url(./bg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     font-weight: bold;
-}
-#overlay{
-    background-color: rgba(145, 136, 136, 0.5); 
-    padding-bottom: 3.95rem;  
+    color: white;
 }
 h1{
     padding: 2rem 0 2rem 0;
@@ -20,4 +17,7 @@ h3{
 .btn{
 padding: 1rem;
 margin: 2rem;
+}
+i{
+    margin: 3rem 0 1rem 0;
 }
