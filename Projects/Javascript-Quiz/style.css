@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{
+    font-family: Poppins;
+    color: rgb(90, 84, 84);
+    text-align: center;
+    background-image: linear-gradient(-50deg, rgb(88, 228, 193), rgb(91, 99, 96));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+  padding: 10px;
+  color: rgb(71, 68, 68);
+}
+
+.question{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.answers {
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+button{
+    font-size: 25px;
+    background-color: rgb(127, 131, 133);
+    color: rgb(255, 255, 255);
+    border: 0px;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    margin: 30px 0 20px 0;
+}
+
+button:hover{
+    background-color: rgb(64, 66, 66);
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 60px;
+}
+#results{
+  font-size: 50px;
+}
