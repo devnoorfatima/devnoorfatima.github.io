@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="tip.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <!-- navbar starts here -->
+    <nav class="navbar navbar-expand-md bg-secondary sticky-top">
+        <i class="fa fa-calculator"></i>
+        <a class="navbar-brand" style="color:white; font-size: 25px;" href="#">Calculators</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="tip.html">Tip Calculator <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calculator.html"> Simple Calculator</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="gas.html"> Gas Mileage Calculator</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="fuel.html"> Fuel Cost Calculator</a>
+                </li>
+
+    </nav>
+
+    <!-- navbar ends here -->
+    <form>
+        <h1>Tip Calculator</h1>
+        <div id="align">
+            <label for="bill">Bill :</label>
+            <input type="text" class="size" id="bill" required><br />
+            <label for="tipPercentage">Tip (%) :</label>
+            <input type="text" class="size" id="tipPercentage" required><br />
+            <label for="people">No. of persons : </label>
+            <input type="number" class="size" id="people" min="1"><br />
+            <div id="btn">
+                <button type="button" onclick="calculateTip();">Calculate</button>
+            </div>
+
+            <label for="tipCalculated"> Tip(calculated) :</label>
+            <input type="text" class="size" id="tipCalculated"><br />
+            <label for="totalBill">Total Bill :</label>
+            <input type="text" class="size" id="totalBill"><br />
+            <label for="person">Per Person :</label>
+            <input type="text" class="size" id="person"><br />
+
+    </form>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="tip.js"></script>
+</body>
+
+</html>

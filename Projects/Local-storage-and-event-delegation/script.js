@@ -44,7 +44,7 @@
 
 
 // This function delets item from list
-function deleteItem(item){
+  function deleteItem(item){
   delete items[item];
   populateList(items , itemsList);
-}
+  };

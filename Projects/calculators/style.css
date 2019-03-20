@@ -1,0 +1,21 @@
+body{
+    font-family: Poppins;
+    background-image: url(./bg1.jpeg);
+    color: white;
+    text-align: center;
+}
+#overlay{
+    background: rgba(99, 94, 94, 0.5);
+    padding: 9.9rem;
+}
+h1{
+    margin: 4rem;
+    font-weight: bold;
+}
+h3{
+    font-weight: bold;
+}
+.btn{
+    margin: 3rem 0.5rem;
+    font-size: 20px;
+}
