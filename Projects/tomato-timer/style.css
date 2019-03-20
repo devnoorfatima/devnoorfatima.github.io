@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Margarine');
+body{
+    background-image: url(./bg..jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Margarine;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin: 3rem;
+}
+
+button{
+    color: white;
+    background-color: transparent;
+    font-size: 25px;
+    border: 1px solid rgb(170, 165, 165);
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+button:focus{
+    outline: none;
+}
+
+.timer__controls{
+    text-align: center;
+}
+
+#input{
+    width:250px;
+    height: 50px;
+    border: none;
+    margin-top: 50px;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: background-color 5500s ease-in-out 0s;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+#input:focus{
+    outline: none;
+}
+
+::placeholder { 
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+  }
+.display{
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+}
