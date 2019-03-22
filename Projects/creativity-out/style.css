@@ -1,0 +1,15 @@
+
+.rise span {
+    display: inline-block;
+    transition : transform 0.3s;
+    }
+    .rise span:hover {
+        color: rgb(19, 19, 17);
+        transform: translateY(-20px) rotate(10deg) scale(1.5);
+    }
+    /* When clicked on, add a background color and strike out text */
+ol li.checked {
+    text-decoration: line-through;
+  }
+  
+  

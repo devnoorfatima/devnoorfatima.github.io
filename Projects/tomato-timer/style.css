@@ -45,11 +45,13 @@ button:focus{
 input[type="text"] {
     font-size: 20px;
     color: white;
+    -webkit-text-fill-color: rgb(253, 253, 253);
     text-align: center;
 }
 
 #input:focus{
     outline: none;
+    color: white;
 }
 
 ::placeholder { 
