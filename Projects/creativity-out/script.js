@@ -36,6 +36,12 @@ function get() {
   }
 }
 
+    input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementsByClassName("btn").click();
+    }
+});
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ol');
 list.addEventListener('click', function(ev) {
