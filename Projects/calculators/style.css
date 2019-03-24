@@ -44,7 +44,7 @@ h3{
         margin-top: 4rem;
     }
   }
-  @media (min-width: 930px) and (max-width: 1024px)  and (orientation: landscape) {
+  @media (min-width: 929px) and (max-width: 1024px) {
     .overlay {
         height: 100vh;
         padding-top: 4rem;
