@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
@@ -8,16 +9,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link rel="stylesheet" href="fuel.css">
+    <link rel="stylesheet" href="gas.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Calculators</title>
-
+    <title>Calculator</title>
 </head>
+
 <body>
     <!-- navbar starts here -->
     <nav class="navbar navbar-expand-md bg-secondary sticky-top">
         <i class="fa fa-calculator"></i>
-        <a class="navbar-brand" style="color:white; font-size: 25px;" href="#">Calculators</a>
+        <a class="navbar-brand" style="color:white; font-size: 25px;" href="../index.html">Calculators</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,53 +27,53 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="tip.html">Tip Calculator <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../Tip/tip.html">Tip Calculator <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="calculator.html"> Simple Calculator</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="gas.html"> Gas Mileage Calculator</a>
+                    <a class="nav-link" href="../Simple/calculator.html"> Simple Calculator</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="fuel.html"> Fuel Cost Calculator</a>
+                    <a class="nav-link" href="../Gas/gas.html"> Gas Mileage Calculator</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../Fuel/fuel.html"> Fuel Cost Calculator</a>
                 </li>
 
     </nav>
     <!-- navbar ends here -->
 
+    <form id="gas-mileage">
+        <h1>Gas Mileage Calculator </h1>
+        <div id="align">
+            <label for="cor">Current Odometer Reading :</label>
+            <input type="text" class="size" id="cor" required> miles<br />
+            <label for="por">Previous Odometer Reading :</label>
+            <input type="text" class="size" id="por" required> miles<br />
+            <label for="gas">Gas Added to tank (Gallons) : </label>
+            <input type="number" class="size" id="gas" min="1"> Gallons<br />
+            <label for="price">Price of Gas per Gallon ($) : </label>
+            <input type="number" class="size" id="price" min="1" style="margin-left:1.5rem;"> $<br />
 
-    <form >
-        <div class="fuel-calc div-overlay">
-             <h1>Fuel Cost Claculator</h1>
-             <label for="distance">Trip Distance :</label>
-             <input type="text" class="size" id="distance" required> miles<br />
-             <label for="efficiency">Fuel Efficiency :</label>
-             <input type="text" class="size" id="efficiency" required>miles/gallon <br />
-             <label for="fuel">Fuel Price : </label>
-             <input type="number" class="size" id="fuel" min="1"> $<br />
-             <div id="btn">
-                 <button type="button" onclick="calculatePrice();">Calculate</button>
-             </div>
- 
-             <label for="fuel-needed"> Fuel Needed :</label>
-             <input type="text" class="size" id="fuel-needed"> Gallons<br />
-             <label for="cost">Price ($) :</label>
-             <input type="text" class="size" id="cost"> $<br />
-        </div>
-    </form>
+            <div id="btn">
+                <button type="button" onclick="calculateMileage();">Calculate</button>
+            </div>
 
-
-
+            <label for="mileage"> Gas Mileage :</label>
+            <input type="text" class="size" id="mileage"> Gallons/mile<br />
+            <label for="totalCost">Total cost ($) :</label>
+              <input type="text" class="size" id="totalCost"> $<br />
+    </div>
+        </form>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="fuel.js"></script>
+    <script src="gas.js"></script>
 
 </body>
+
 </html>

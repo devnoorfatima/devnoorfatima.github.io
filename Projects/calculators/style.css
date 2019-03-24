@@ -1,0 +1,35 @@
+body{
+    font-family: Poppins;
+    background-image: url(./bg1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: auto; 
+}
+.overlay{
+    background: rgba(99, 94, 94, 0.5);
+    /* padding: 9.9rem; */
+    height: auto;
+}
+h1{
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+h3{
+    font-weight: bold;
+}
+.btn{
+    margin: 3rem 0.5rem;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 480px) {
+    .overlay {
+      height: 100vh;
+      padding-top: 4rem;
+    }
+    h1{
+        margin-top: 4rem;
+    }
+  }
