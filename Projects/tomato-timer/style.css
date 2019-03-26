@@ -6,13 +6,19 @@ body{
     font-family: Margarine;
     height: -webkit-fill-available;
 }
+.modal{
+    font-family: Poppins;
+}
 
 h1{
     text-align: center;
     color: white;
     margin: 3rem;
 }
-
+span{
+    color: white;
+    margin:10px 0 0 10px; 
+}
 button{
     color: white;
     background-color: transparent;
@@ -40,7 +46,6 @@ button:focus{
     background-color: transparent;
     border-bottom: 2px solid rgb(255, 255, 255);
     transition: background-color 5500s ease-in-out 0s;
-    border-radius: 10px;
 }
 
 input[type="text"] {
