@@ -109,3 +109,14 @@ button:focus{
         color: aqua;
     }
 }
+
+@media (max-width: 482px) {
+    .field{
+        margin: 0;
+        padding: 1rem;
+        width: -webkit-fill-available;
+    }
+    input{
+        width: -webkit-fill-available;
+    }
+}
