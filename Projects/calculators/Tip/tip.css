@@ -1,5 +1,6 @@
  /* styles for body */
  body {
+     width: 100%;
     font-family: Poppins;
     font-size: 20px;
     background-color: rgb(78, 82, 78);
@@ -18,7 +19,10 @@
 .navbar-nav li {
     padding-right: 1.3em;
 }
-
+.navbar-toggler-icon{
+    color: white;
+    border-radius: 10px;
+}
 .nav-link {
     font-size: 1.1em !important;
     color: white;
@@ -27,6 +31,10 @@
 
 .nav-link:hover {
     color: white;
+}
+#icon{
+    color: white;
+
 }
 
 /* styles for header */
@@ -116,4 +124,19 @@ button {
 
 button:focus {
     outline: none;
+}
+
+
+
+@media (min-width:769px) and (max-width: 826px) {
+	body{
+			width: fit-content;
+	}
+}
+
+
+@media (max-width: 460px) {
+    body{
+        width: fit-content;
+    }
 }

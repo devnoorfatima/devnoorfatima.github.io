@@ -99,3 +99,14 @@
  }
 
  
+@media (min-width:769px) and (max-width: 826px) {
+	body{
+			width: fit-content;
+	}
+}
+
+@media (max-width: 325px) {
+	body{
+			width: fit-content;
+	}
+}

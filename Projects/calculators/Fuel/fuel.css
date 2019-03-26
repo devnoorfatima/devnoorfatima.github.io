@@ -120,3 +120,16 @@ button:focus {
 #fuel{
     margin-left: 3rem;
 }
+
+
+@media (min-width:769px) and (max-width: 826px) {
+	body{
+			width: fit-content;
+	}
+}
+
+@media (max-width: 423px) {
+	body{
+			width: fit-content;
+	}
+}
