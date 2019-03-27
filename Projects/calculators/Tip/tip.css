@@ -33,7 +33,10 @@
     color: white;
 }
 #icon{
-    color: white;
+    color: rgb(105, 196, 161);
+    position: fixed;
+    top: 10;
+    left: 0;
 
 }
 

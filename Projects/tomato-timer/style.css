@@ -2,6 +2,7 @@
 body{
     background-image: url(./bg..jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     font-family: Margarine;
     height: -webkit-fill-available;
@@ -71,7 +72,7 @@ input[type="text"] {
 }
 
 
-@media (min-width: 175px) and (max-width: 343px) {
+@media (min-width: 165px) and (max-width: 343px) {
     body{
         height: auto;
     }
