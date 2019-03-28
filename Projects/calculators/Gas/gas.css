@@ -1,112 +1,90 @@
 /* styles for gas mileage calculator */
 
 /* styles for body */
- body {
-     font-family: Poppins;
-     font-size: 20px;
-     background-color: rgb(78, 82, 78);
-     text-align: center;
-     background: url(./bg3.jpeg);
-     background-attachment: fixed;
-     background-repeat: no-repeat;
-     background-size: cover;
- }
+body {
+    font-family: Poppins;
+    font-size: 20px;
+    background-color: rgb(78, 82, 78);
+    text-align: center;
+    background: url(./bg3.jpeg) fixed no-repeat;
+    background-size: cover;
+}
 
- /* styles for nav-bar */
- .navbar-brand {
-     margin: 10px;
- }
+/* styles for nav-bar */
+.nav-link {
+    font-size: 1.1em !important;
+}
 
- .navbar-nav li {
-     padding-right: 1.3em;
- }
+h1 {
+    font-size: 3rem;
+}
+/* styles for form */
+.main {
+    display: inline-block;
+    text-align: left;
+    background-color: rgb(118, 122, 121);
+    padding: 2rem;
+    margin: 2rem auto 2rem auto;
+    border-radius: 10px;
+    border: 5px double rgb(66, 65, 65);
+}
+label{
+    margin-bottom:0; 
+}
+/* input fields */
+.size {
+    width: 250px;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid rgb(185, 214, 203);
+    background-color: rgb(118, 122, 121);
+    transition: background-color 5500s ease-in-out 0s;
+}
 
- .nav-link {
-     font-size: 1.1em !important;
-     color: white;
-
- }
-
- .nav-link:hover {
-     color: white;
- }
-
- h1 {
-     font-size: 3rem;
-     margin: 0;
-     padding: 0;
-     margin-bottom: 3rem;
- }
-
-
- /* styles for form */
- #gas-mileage {
-     display: inline-block;
-     text-align: left;
-     background-color: rgb(118, 122, 121);
-     padding: 2rem;
-     margin: 2rem auto 2rem auto;
-     border-radius: 10px;
-     border: 5px double rgb(66, 65, 65);
- }
-
- /* input fields */
- .size {
-     width: 200px;
-     height: 20px;
-     margin: 5px 0 5px 0;
-     border: none;
-     border-bottom: 1px solid rgb(185, 214, 203);
-     background-color: rgb(118, 122, 121);
-     /* -webkit-box-shadow: 0 0 0px 1000px rgb(105, 196, 161) inset; */
-     transition: background-color 5500s ease-in-out 0s;
- }
-
- input[type="text"] {
+input[type="text"] {
     font-size: 20px;
     color: white;
     -webkit-text-fill-color: rgb(253, 253, 253);
-    text-align: center;
 }
- input[type="number"] {
-     font-size: 20px;
- }
 
- .size:focus {
-     outline: none;
-     background-color: rgb(105, 196, 161);
+input[type="number"] {
+    font-size: 20px;
+}
 
- }
+.size:focus {
+    outline: none;
+    background-color: rgb(105, 196, 161);
+}
 
- /* button */
- #btn {
-     text-align: center;
-     margin: 10px;
- }
-
- button {
-     font-size: 25px;
-     border: 1px solid black;
-     border-radius: 3px;
-     margin: 8px;
-     background-color: rgb(118, 122, 121);
-     box-shadow: 2px 3px rgb(67, 70, 69);
- }
-
-
- button:focus {
-     outline: none;
- }
-
- 
+/* button */
+button {
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgb(118, 122, 121);
+    box-shadow: 2px 3px rgb(67, 70, 69);
+}
+button:focus {
+    outline: none;
+}
+/* media queries */
 @media (min-width:769px) and (max-width: 826px) {
-	body{
-			width: fit-content;
-	}
+    body {
+        width: fit-content;
+    }
 }
 
 @media (max-width: 325px) {
-	body{
-			width: fit-content;
-	}
+    body {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 575px) {
+    label {
+        text-align: center;
+    }
+    input {
+        margin: 0 auto;
+    }
 }

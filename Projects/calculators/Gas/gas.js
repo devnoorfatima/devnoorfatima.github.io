@@ -21,7 +21,7 @@ let fuelNeeded = document.getElementById('fuel-needed');
 let cost = document.getElementById('cost');
 
 function calculatePrice() {
-    if(distance.value && efficiency.value && fuel.value) {
+    if (distance.value && efficiency.value && fuel.value) {
         fuelNeeded.value = Math.round(distance.value / efficiency.value);
         cost.value = Math.round(fuelNeeded.value * fuel.value);
     }

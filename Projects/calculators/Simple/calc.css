@@ -1,135 +1,114 @@
  /* styles for body*/
  body {
-  font-family: Poppins;
-  font-size: 20px;
-  background-color: rgb(78, 82, 78);
-  text-align: center;
-  /* background: linear-gradient(to bottom, #72e0a4, #2a72ad); */
-  background: url(./bg2.jpeg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-} 
+ 	font-family: Poppins;
+ 	font-size: 20px;
+ 	background-color: rgb(78, 82, 78);
+ 	text-align: center;
+ 	background: url(./bg2.jpeg);
+ 	background-attachment: fixed;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ }
 
-/* styles for nav-bar */
-.navbar-brand{
-margin:10px;
-}
+ /* styles for calculator */
+ /* Calculator */
+ #calculator {
+ 	width: 325px;
+ 	height: auto;
+ 	margin: 100px auto;
+ 	padding: 20px 20px 9px;
+ 	border-radius: 5px;
+ }
 
-.navbar-nav li {
-  padding-right: 1.3em;
-}
+ /* Top */
+ .top {
+ 	border: 4px double black;
+ 	border-radius: 7px;
+ 	margin-bottom: 10px;
+ }
 
-.nav-link {
-  font-size: 1.1em !important;
-  color: white;
-}
+ .top span.clear {
+ 	float: left;
+ }
 
-.nav-link:hover {
-  color: white;
-}
-
-/* styles for calculator */
-
-
-/* Calculator */
-#calculator {
-	width: 325px;
-	height: auto;
-	margin: 100px auto;
-	padding: 20px 20px 9px;
-  border-radius: 5px;
-}
-
-/* Top */
-.top{
-  border: 4px double black;
-  border-radius: 7px;
-  margin-bottom: 10px;
-}
-.top  span.clear{
-	float: left;
-}
-
-/* Screen styling */
+ /* Screen styling */
 
 
-.top .screen {
-  height:90px;
-	width: 100%;
-	padding: 0 10px;
-	background: rgba(126, 129, 129, 0.8);
-	border-radius: 5px;
-	/* Typography */
-	font-size: 30px;
-	line-height: 90px;
-	color: white;
-	text-align: right;
-  overflow:auto;
-}
+ .top .screen {
+ 	height: 90px;
+ 	width: 100%;
+ 	padding: 0 10px;
+ 	background: rgba(126, 129, 129, 0.8);
+ 	border-radius: 5px;
+ 	/* Typography */
+ 	font-size: 30px;
+ 	line-height: 90px;
+ 	color: white;
+ 	text-align: right;
+ 	overflow: auto;
+ }
 
-/* Clear floats */
-.keys  {
-  overflow: hidden;
-}
+ /* Clear floats */
+ .keys {
+ 	overflow: hidden;
+ }
 
-/* Keys */
-.keys span, .top span.clear {
-	float: left;
-	position: relative;
-	top: 0;
-	background: rgb(119, 114, 114);
-	font-size:27px;
-	cursor: pointer;
-	width: 66px;
-	height: 46px;
-	border-radius: 5px;
-	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
-	margin: 0 7px 11px 0;
-	color: #ffffff;
-	line-height: 46px;
-	text-align: center;
-	user-select: none;
-  outline: 0 solid;
-	/* hover and active state transitions */
-	transition: all 0.2s ease;
-}
+ /* Keys */
+ .keys span,
+ .top span.clear {
+ 	float: left;
+ 	position: relative;
+ 	top: 0;
+ 	background: rgb(119, 114, 114);
+ 	font-size: 27px;
+ 	cursor: pointer;
+ 	width: 66px;
+ 	height: 46px;
+ 	border-radius: 5px;
+ 	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+ 	margin: 0 7px 11px 0;
+ 	color: #ffffff;
+ 	line-height: 46px;
+ 	text-align: center;
+ 	user-select: none;
+ 	outline: 0 solid;
+ 	/* hover and active state transitions */
+ 	transition: all 0.2s ease;
+ }
 
-/* Unique key styling */
-.keys span.operator {
-	background: #737475;
-	margin-right: 0;
-}
+ /* Unique key styling */
+ .keys span.operator {
+ 	background: #737475;
+ 	margin-right: 0;
+ }
 
+ .keys span.eval {
+ 	background: #6cb5d6;
+ 	box-shadow: 0px 4px #2aa5d6;
+ 	color: #ebeae7;
+ 	width: 212px;
+ }
 
+ span.clear {
+ 	background: #74deec;
+ 	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+ }
 
-.keys span.eval {
-	background: #6cb5d6;
-	box-shadow: 0px 4px #2aa5d6;
-	color: #ebeae7;
-  width: 212px;
-}
+ /* hover effects */
 
-span.clear {
-	background: #74deec;
-	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
-}
+ .keys span.operator:hover {
+ 	background: #939497;
+ 	color: #ffffff;
+ }
 
-/* hover effects */
+ @media (min-width:769px) and (max-width: 826px) {
+ 	body {
+ 		width: fit-content;
+ 	}
+ }
 
-.keys span.operator:hover {
-	background: #939497;
-	color: #ffffff;
-}
-
-@media (min-width:769px) and (max-width: 826px) {
-	body{
-			width: fit-content;
-	}
-}
-
-@media (max-width: 325px) {
-	body{
-			width: fit-content;
-	}
-}
+ @media (max-width: 325px) {
+ 	body {
+ 		width: fit-content;
+ 	}
+ }

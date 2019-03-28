@@ -20,8 +20,7 @@ function calculateTip() {
         totalBill.value = (parseInt(tip) + parseInt(bill.value));
         person.value = Math.round(parseInt(totalBill.value) / parseInt(people.value));
         return;
-    } 
-    else {
+    } else {
         alert('Enter the data in fields');
     }
 };
