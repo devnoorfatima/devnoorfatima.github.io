@@ -19,7 +19,7 @@
     <!-- navbar starts here -->
     <nav class="navbar navbar-expand-md navbar-dark bg-secondary sticky-top">
         <i class="fa fa-calculator"></i>
-        <a class="navbar-brand" style="color:white; font-size: 25px;" href="../index.html">Calculators</a>
+        <a class="navbar-brand text-white ml-2" href="../index.html">Calculators</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,46 +27,55 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item text-white">
+                <li class="nav-item pr-2">
                     <a class="nav-link text-white" href="../Tip/tip.html">Tip Calculator <span
                             class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item text-white">
+                <li class="nav-item pr-2">
                     <a class="nav-link text-white" href="../Simple/calculator.html"> Simple Calculator</a>
                 </li>
-                <li class="nav-item text-white">
+                <li class="nav-item pr-2">
                     <a class="nav-link text-white" href="../Gas/gas.html"> Gas Mileage Calculator</a>
                 </li>
-                <li class="nav-item text-white">
+                <li class="nav-item pr-2">
                     <a class="nav-link text-white" href="../Fuel/fuel.html"> Fuel Cost Calculator</a>
                 </li>
 
     </nav>
     <!-- navbar ends here -->
-
-
-    <form>
-        <div class="fuel-calc div-overlay">
-            <h1>Fuel Cost Claculator</h1>
-            <label for="distance">Trip Distance :</label>
-            <input type="text" class="size" id="distance" required> miles<br />
-            <label for="efficiency">Fuel Efficiency :</label>
-            <input type="text" class="size" id="efficiency" required>miles/gallon <br />
-            <label for="fuel">Fuel Price : </label>
-            <input type="number" class="size" id="fuel" min="1"> $<br />
-            <div id="btn">
-                <button type="button" onclick="calculatePrice();">Calculate</button>
+    <!-- inputs starts here -->
+    <div class="main col-sm-7 p-4 div-overlay">
+        <h1 class="mb-4 text-center">Fuel Cost Claculator</h1>
+        <form>
+            <div class="row">
+                <label class="col-sm-5" for="distance">Trip Distance :</label>
+                <input type="text" class="size col-sm-7 col-md-5" id="distance" required> 
             </div>
-
-            <label for="fuel-needed"> Fuel Needed :</label>
-            <input type="text" class="size" id="fuel-needed"> Gallons<br />
-            <label for="cost">Price ($) :</label>
-            <input type="text" class="size" id="cost"> $<br />
-        </div>
+            <div class="row">
+                <label class="col-sm-5" for="efficiency">Fuel Efficiency :</label>
+                <input type="text" class="size col-sm-7 col-md-5" id="efficiency" required>
+            </div>
+            <div class="row">
+                <label class="col-sm-5" for="fuel">Fuel Price : </label>
+                <input type="number" class="size col-sm-7 col-md-5" id="fuel" min="1"> 
+            </div>
+            <!-- button -->
+            <div class="text-center">
+                <button type="button" class="my-3" onclick="calculatePrice();">Calculate</button>
+            </div>
+            <!-- outputs -->
+            <div class="row">
+                <label class="col-sm-5" for="fuel-needed"> Fuel Needed :</label>
+                <input type="text" class="size col-sm-7 col-md-5" id="fuel-needed"> 
+            </div>
+            <div class="row">
+                <label class="col-sm-5" for="cost">Price ($) :</label>
+                <input type="text" class="size col-sm-7 col-md-5" id="cost"> 
+            </div>
+    </div>
     </form>
 
-
-
+<!-- script tags -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>

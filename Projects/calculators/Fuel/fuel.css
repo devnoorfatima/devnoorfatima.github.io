@@ -1,57 +1,35 @@
-
 /* styles for body */
 body {
     font-family: Poppins;
     font-size: 20px;
     background-color: rgb(78, 82, 78);
     text-align: center;
-    background: url(./fc.jpeg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background: url(./fc.jpeg) fixed no-repeat;
     background-size: cover;
     font-weight: bolder;
 }
 
 /* styles for nav-bar */
-.navbar-brand {
-    margin: 10px;
-}
-
-.navbar-nav li {
-    padding-right: 1.3em;
-}
-
 .nav-link {
     font-size: 1.1em !important;
-    color: white;
-
 }
-
-.nav-link:hover {
-    color: white;
-}
-
-
 /* styles for header */
 h1 {
     font-size: 3rem;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 3rem;
 }
 
 /* input fields */
 .size {
-    width: 200px;
     height: 20px;
-    margin: 5px 0 5px 0;
+    width: 200px;
     border: none;
     border-bottom: 1px solid rgb(185, 214, 203);
     background-color: transparent;
-    /* -webkit-box-shadow: 0 0 0px 1000px rgb(105, 196, 161) inset; */
     transition: background-color 5500s ease-in-out 0s;
 }
-
+label{
+    text-align: right;
+}
 input, select, textarea{
     color: #ffffff;
 }
@@ -64,7 +42,6 @@ input[type="text"] {
     font-size: 20px;
     color: white;
     -webkit-text-fill-color: rgb(253, 253, 253);
-    text-align: center;
 }
 
 input[type="number"] {
@@ -74,53 +51,29 @@ input[type="number"] {
 .size:focus {
     outline: none;
     background-color: rgb(105, 196, 161);
-
 }
 
 /* button */
-#btn {
-    text-align: center;
-    margin: 10px;
-}
-
 button {
     font-size: 25px;
     border: 1px solid black;
     border-radius: 3px;
-    margin: 8px;
     background-color: rgb(118, 122, 121);
     box-shadow: 2px 3px rgb(67, 70, 69);
 }
-
-
 button:focus {
     outline: none;
 }
 
-
 /* Styles for fuel cost calculator */
-.fuel-calc {
+.main{
     display: inline-block;
-    text-align: left;
     background-color:rgba(29, 28, 28, 0.4);
-    padding: 5rem;
-    margin: 3rem auto 3rem auto;
     border-radius: 10px;
     border: 5px double white;
     color: rgb(255, 255, 255);
     font-size: 25px;
 }
-
-#cost {
-    margin-left: 2.5rem;
-}
-#distance{
-    margin-left: 0.5rem;
-}
-#fuel{
-    margin-left: 3rem;
-}
-
 
 @media (min-width:769px) and (max-width: 826px) {
 	body{
@@ -132,4 +85,13 @@ button:focus {
 	body{
 			width: fit-content;
 	}
+}
+
+@media (max-width: 781px) {
+    label {
+        text-align: center;
+    }
+    input {
+        margin: 0 auto;
+    }
 }
