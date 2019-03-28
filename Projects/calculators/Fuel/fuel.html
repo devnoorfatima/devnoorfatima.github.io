@@ -44,18 +44,18 @@
     </nav>
     <!-- navbar ends here -->
     <!-- inputs starts here -->
-    <div class="main col-sm-7 p-4 div-overlay">
+    <div class="main col-sm-7 p-4 div-overlay my-5">
         <h1 class="mb-4 text-center">Fuel Cost Claculator</h1>
         <form>
-            <div class="row">
+            <div class="row mb-2">
                 <label class="col-sm-5" for="distance">Trip Distance :</label>
                 <input type="text" class="size col-sm-7 col-md-5" id="distance" required> 
             </div>
-            <div class="row">
+            <div class="row mb-2">
                 <label class="col-sm-5" for="efficiency">Fuel Efficiency :</label>
                 <input type="text" class="size col-sm-7 col-md-5" id="efficiency" required>
             </div>
-            <div class="row">
+            <div class="row mb-2">
                 <label class="col-sm-5" for="fuel">Fuel Price : </label>
                 <input type="number" class="size col-sm-7 col-md-5" id="fuel" min="1"> 
             </div>
@@ -64,11 +64,11 @@
                 <button type="button" class="my-3" onclick="calculatePrice();">Calculate</button>
             </div>
             <!-- outputs -->
-            <div class="row">
+            <div class="row mb-2">
                 <label class="col-sm-5" for="fuel-needed"> Fuel Needed :</label>
                 <input type="text" class="size col-sm-7 col-md-5" id="fuel-needed"> 
             </div>
-            <div class="row">
+            <div class="row mb-2">
                 <label class="col-sm-5" for="cost">Price ($) :</label>
                 <input type="text" class="size col-sm-7 col-md-5" id="cost"> 
             </div>

@@ -87,7 +87,7 @@ button:focus {
 	}
 }
 
-@media (max-width: 781px) {
+@media (max-width: 895px) {
     label {
         text-align: center;
     }
