@@ -46,8 +46,8 @@ input{
     transition: background-color 5500s ease-in-out 0s;
 }
 input[type="text"] {
-    color: rgb(255, 255, 255);
-    -webkit-text-fill-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 0);
+    -webkit-text-fill-color: rgb(255, 240, 30);
 }
 input:focus{
 outline: none;
@@ -110,13 +110,11 @@ button:focus{
     }
 }
 
-@media (max-width: 482px) {
-    .field{
-        margin: 0;
-        padding: 1rem;
-        width: -webkit-fill-available;
-    }
-    input{
-        width: -webkit-fill-available;
-    }
+@media (max-width: 483px) {
+   input{
+    width: -webkit-fill-available;
+   }
+   .field{
+    width: -webkit-fill-available;
+   }
 }

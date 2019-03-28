@@ -1,145 +1,98 @@
  /* styles for body */
  body {
-     width: 100%;
-    font-family: Poppins;
-    font-size: 20px;
-    background-color: rgb(78, 82, 78);
-    text-align: center;
-    background: url(./bg.jpeg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+     font-family: Poppins;
+     font-size: 20px;
+     background-color: rgb(78, 82, 78);
+     text-align: center;
+     background: url(./bg.jpeg) fixed no-repeat;
+     background-size: cover;
+ }
 
-/* styles for nav-bar */
-.navbar-brand{
-    margin:10px;
-}
+ /* styles for nav-bar */
+ .nav-link {
+     font-size: 1.1em !important;
+ }
 
-.navbar-nav li {
-    padding-right: 1.3em;
-}
-.navbar-toggler-icon{
-    color: white;
-    border-radius: 10px;
-}
-.nav-link {
-    font-size: 1.1em !important;
-    color: white;
+ /* styles for about */
+ /* #icon {
+     color: rgb(0, 0, 0);
+     position: fixed;
+     right: 0;
+     bottom: 0;
+ } */
+ /* styles for header */
+ h1 {
+     font-size: 3rem;
+ }
 
-}
+ /* styles for form */
+ .main {
+     display: inline-block;
+     background-color: rgb(105, 196, 161);
+     border-radius: 10px;
+     border: 5px double rgb(66, 65, 65);
+ }
 
-.nav-link:hover {
-    color: white;
-}
-#icon{
-    color: rgb(105, 196, 161);
-    position: fixed;
-    top: 10;
-    left: 0;
+ /* input fields */
+ .size {
+     width: 250px;
+     border: none;
+     border-bottom: 1px solid rgb(109, 214, 197);
+     background-color: rgb(105, 196, 161);
+     transition: background-color 5500s ease-in-out 0s;
+ }
 
-}
+ input[type="text"] {
+     font-size: 20px;
+ }
 
-/* styles for header */
-h1 {
-    font-size: 3rem;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 3rem;
-}
+ input[type="number"] {
+     font-size: 20px;
+ }
 
+ .size:focus {
+     outline: none;
+     background-color: rgb(105, 196, 161);
+ }
 
-/* styles for form */
-form {
-    display: inline-block;
-    text-align: left;
-    background-color: rgb(105, 196, 161);
-    padding: 3rem;
-    margin: 2rem auto 2rem auto;
-    border-radius: 10px;
-    border: 5px double rgb(66, 65, 65);
-}
+ /* button */
+ button {
+     font-size: 25px;
+     border: 1px solid black;
+     border-radius: 3px;
+     background-color: rgb(56, 172, 127);
+     box-shadow: 2px 3px rgb(48, 150, 111);
+ }
 
-/* input fields */
-.size {
-    width: 250px;
-    height: 20px;
-    margin: 5px 0 5px 0;
-    border: none;
-    border-bottom: 1px solid rgb(109, 214, 197);
-    background-color: rgb(105, 196, 161);
-    /* -webkit-box-shadow: 0 0 0px 1000px rgb(105, 196, 161) inset; */
-    transition: background-color 5500s ease-in-out 0s;
-}
+ /* styles for labels */
+ label {
+     margin: 0;
+     text-align: right;
+ }
 
-input[type="text"] {
-    font-size: 20px;
-}
+ button:focus {
+     outline: none;
+ }
 
-input[type="number"] {
-    font-size: 20px;
-}
+ /* media queries */
+ @media (min-width:769px) and (max-width: 826px) {
+     body {
+         width: fit-content;
+     }
+ }
 
-.size:focus {
-    outline: none;
-    background-color: rgb(105, 196, 161);
+ @media (max-width: 460px) {
+     body {
+         width: fit-content;
+     }
+ }
 
-}
+ @media (max-width: 575px) {
+     label {
+         text-align: center;
+     }
 
-#bill {
-    margin: 0 0 1rem 6.5rem;
-}
-
-#tipPercentage {
-    margin: 0 0 1rem 4.5rem;
-}
-
-#people {
-    margin-bottom: 2rem;
-}
-
-#tipCalculated {
-    margin-top: 2rem;
-}
-
-#totalBill {
-    margin: 1rem 0 0 4.5rem;
-}
-
-#person {
-    margin: 1rem 0 0 3rem;
-}
-
-/* button */
-#btn {
-    text-align: center;
-}
-
-button {
-    font-size: 25px;
-    border: 1px solid black;
-    border-radius: 3px;
-    margin: 8px;
-    background-color: rgb(56, 172, 127);
-    box-shadow: 2px 3px rgb(48, 150, 111);
-}
-
-
-button:focus {
-    outline: none;
-}
-
-
-
-@media (min-width:769px) and (max-width: 826px) {
-	body{
-			width: fit-content;
-	}
-}
-
-
-@media (max-width: 460px) {
-    body{
-        width: fit-content;
-    }
-}
+     input {
+         margin: 0 auto;
+     }
+ }
