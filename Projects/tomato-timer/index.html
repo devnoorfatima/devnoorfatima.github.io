@@ -24,8 +24,12 @@
           <button data-time="900" class="timer__button"> 15 Min</button>
           <button data-time="3600" class="timer__button">Hour Break</button>
           <form name="customForm" id="custom">
-            <input type="text" id="input" name="minutes" placeholder="Enter Minutes">
+            <div>
+              <input type="text" id="input" name="minutes" placeholder="Enter Minutes">
+            </div>
           </form>
+        
+        <audio  tabindex="0" id="beep" controls preload="auto" src="./beep-01a.mp3"></audio>
         </div>
        <!-- Modal starts  -->
        <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">

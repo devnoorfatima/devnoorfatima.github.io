@@ -2,7 +2,6 @@ let countdown;
 const timerDisplay = document.querySelector('.display__time-left');
 const endTime = document.querySelector('.display__end-time');
 const buttons = document.querySelectorAll('[data-time]');
-const reset = document.getElementById('reset');
 
 function timer(seconds) {
   // clear any existing timers
@@ -31,8 +30,14 @@ function displayTimeLeft(seconds) {
   const display = `${minutes}:${remainderSeconds < 10 ? '0' : '' }${remainderSeconds}`;
   document.title = display;
   timerDisplay.textContent = display;
-}
 
+  if(remainderSeconds === 0){
+    let sound =  document.querySelector('#beep');
+    sound.play();
+    sound.display = 'none';
+    }
+   }
+   
 function displayEndTime(timestamp) {
   const end = new Date(timestamp);
   const hour = end.getHours();
@@ -54,3 +59,4 @@ document.customForm.addEventListener('submit', function(e) {
   timer(mins * 60);
   this.reset();
 });
+ 

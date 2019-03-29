@@ -20,6 +20,9 @@ span{
     color: white;
     margin:10px 0 0 10px; 
 }
+audio{
+    display: none;
+}
 button{
     color: white;
     background-color: transparent;
