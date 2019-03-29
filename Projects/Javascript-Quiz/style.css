@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
-body{
-    font-family: Poppins;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    background-color: rgb(230, 185, 185);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+  font-family: Poppins;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: rgb(230, 185, 185);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-h1{
+h1 {
   padding: 10px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
-.question{
+.question {
   font-size: 30px;
   margin-bottom: 10px;
 }
@@ -27,39 +27,41 @@ h1{
   display: inline-block;
 }
 
-.answers label{
+.answers label {
   display: block;
   margin-bottom: 10px;
 }
 
-button{
-    font-size: 25px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(223, 180, 180);
-    border: 0px;
-    font-weight: bold;
-    border-radius: 5px;
-    padding: 20px;
-    cursor: pointer;
-    margin: 30px 0 20px 0;
+button {
+  font-size: 25px;
+  background-color: rgb(14, 13, 13);
+  color: rgb(223, 180, 180);
+  border: 0px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 20px;
+  cursor: pointer;
+  margin: 30px 0 20px 0;
 }
 
-button:focus{
+button:focus {
   outline: none;
 }
-.slide{
-display: none; 
+
+.slide {
+  display: none;
 }
 
-.active-slide{
+.active-slide {
   display: block;
 }
 
-.quiz-container{
+.quiz-container {
   position: relative;
   height: 200px;
   margin-top: 60px;
 }
-#results{
+
+#results {
   font-size: 50px;
 }

@@ -2,7 +2,7 @@ let countdown;
 const timerDisplay = document.querySelector('.display__time-left');
 const endTime = document.querySelector('.display__end-time');
 const buttons = document.querySelectorAll('[data-time]');
-
+let sound =  document.querySelector('#beep');
 function timer(seconds) {
   // clear any existing timers
   clearInterval(countdown);
@@ -31,8 +31,7 @@ function displayTimeLeft(seconds) {
   document.title = display;
   timerDisplay.textContent = display;
 
-  if(remainderSeconds === 0){
-    let sound =  document.querySelector('#beep');
+  if(remainderSeconds === 0 && minutes === 0){
     sound.play();
     sound.display = 'none';
     }
@@ -50,7 +49,6 @@ function startTimer() {
   const seconds = parseInt(this.dataset.time);
   timer(seconds);
 }
-
 buttons.forEach(button => button.addEventListener('click', startTimer));
 document.customForm.addEventListener('submit', function(e) {
   e.preventDefault();
@@ -59,4 +57,3 @@ document.customForm.addEventListener('submit', function(e) {
   timer(mins * 60);
   this.reset();
 });
- 

@@ -160,10 +160,10 @@
       ${numCorrect} out of ${myQuestions.length}
       `;
     if(numCorrect >=5){
-      resultsContainer.style.color='lightgreen';
+      resultsContainer.style.color='green';
       quizContainer.innerHTML= 'You Passed It..';
       quizContainer.style.fontSize="35px";
-      quizContainer.style.color="lightgreen";
+      quizContainer.style.color="green";
       submitButton.style.display="none";
       previousButton.style.display="none";
     }else {

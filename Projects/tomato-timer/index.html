@@ -25,7 +25,8 @@
           <button data-time="3600" class="timer__button">Hour Break</button>
           <form name="customForm" id="custom">
             <div>
-              <input type="text" id="input" name="minutes" placeholder="Enter Minutes">
+              <input type="text" id="input" name="minutes" placeholder="Enter Minutes" required>
+            <button onclick="start()" id="s-btn">Start</button>
             </div>
           </form>
         
@@ -37,8 +38,8 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalScrollableTitle"> Information About this Project.</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
+                <button class="p-0 m-0" type="button" cla0ss="close" data-dismiss="modal" aria-label="Close">
+                  <span class="p-0 m-0" style="color:black;" aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
@@ -55,6 +56,9 @@
                   </li>
                   <li>
                     Bootstrap-4
+                  </li>
+                  <li>
+                    Timer Beeps when ends.
                   </li>
                 </ul>
                 Practised:
