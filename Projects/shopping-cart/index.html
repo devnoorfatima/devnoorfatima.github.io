@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137843206-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-137843206-1');
-</script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,14 +29,25 @@
     <h3 class="text-center">Select your category:</h3>
 
     <!-- Buttons -->
-    <div class="text-center">
-        <button type="button" onclick="window.location.href = 'grocery.html#grocery';"
-            class="btn m-4 mt-5">Grocery</button>
-        <button type="button" onclick="window.location.href = 'grocery.html#shoes';" class="btn m-4 mt-5">Shoes</button>
-        <button type="button" onclick="window.location.href = 'grocery.html#clothes';"
-            class="btn m-4 mt-5">Clothes</button>
-        <button type="button" onclick="window.location.href = 'grocery.html#beauty';"
-            class="btn m-4 mt-5">Beauty</button>
+    <div class="col-sm-8 mx-auto">
+        <div class="row">
+            <div class="col-sm-3 mr-2">
+                <button type="button" onclick="window.location.href = 'grocery.html#grocery';"
+                    class="btn mt-5">Grocery</button>
+            </div>
+            <div class="col-sm-3 mr-2">
+                <button type="button" onclick="window.location.href = 'grocery.html#shoes';"
+                    class="btn mt-5">Shoes</button>
+            </div>
+            <div class="col-sm-3 mr-2">
+                <button type="button" onclick="window.location.href = 'grocery.html#clothes';"
+                    class="btn mt-5">Clothes</button>
+            </div>
+            <div class="col-sm-2">
+                <button type="button" onclick="window.location.href = 'grocery.html#beauty';"
+                    class="btn mt-5">Beauty</button>
+            </div>
+        </div>
     </div>
 
 

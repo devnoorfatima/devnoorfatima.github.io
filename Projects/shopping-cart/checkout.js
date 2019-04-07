@@ -1,3 +1,6 @@
+const phone = document.querySelector('.validation');
+const name = document.querySelector('.name');
+const err = document.querySelector('.err');  
 // Get the input field
 let input = document.querySelector(".caps");
 
@@ -14,8 +17,20 @@ input.addEventListener("keyup", function (event) {
         text.style.display = "none"
     }
 });
-const phone = document.querySelector('.validation');
-    function validate() {
+
+
+name.addEventListener("keyup", function () {
+    let rgx =/[a-zA-Z]+/g;
+    if (rgx.test(name.value)) {
+        console.log(name.value);
+        return true;
+    } else {
+      err.style.display='block';     
+    }
+});
+
+
+function validate() {
         let regex = /^\+(?:[0-9] ?){6,14}[0-9]$/;
         if (regex.test(phone.value)) {
             console.log(phone.value);
@@ -23,5 +38,5 @@ const phone = document.querySelector('.validation');
         } else {
         const txt = document.querySelector('.text'); 
         txt.style.display='block';      
-        }
+        }     
     }
