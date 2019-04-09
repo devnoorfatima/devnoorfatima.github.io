@@ -1,5 +1,6 @@
 // Select all the from document using queryselectAll
 var keys = document.querySelectorAll('#calculator span');
+var display = document.querySelector('#display');
 // Define operators
 var operators = ['+', '-', 'x', '÷', '^'];
 // Set decimal flag for use later
@@ -40,7 +41,6 @@ for (var i = 0; i < keys.length; i++) {
 		}
 
 		// Javascript checks
-
 		// No two operators should be added consecutively.		
 		else if (operators.indexOf(btnVal) > -1) {
 			// Get the last character from the equation
@@ -58,7 +58,6 @@ for (var i = 0; i < keys.length; i++) {
 			if (operators.indexOf(lastChar) > -1 && inputVal.length > 1) {
 				input.innerHTML = inputVal.replace(/.$/, btnVal);
 			}
-
 			decimalAdded = false;
 		}
 		// allow decimal point input
@@ -92,8 +91,7 @@ document.onkeydown = function (event) {
 	// Using regex to replace all instances of x, ÷, ^ with *, / and ** respectively. 
 	equation = equation.replace(/x/g, '*').replace(/÷/g, '/').replace(/\^/g, '**');
 
-	// Target each keypress and update the input screen
-
+	// Target each keypress and update the input screen	
 	if (key_press == 1) {
 		input.innerHTML += key_press;
 	}

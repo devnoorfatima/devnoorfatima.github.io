@@ -19,6 +19,8 @@
 </head>
 
 <body>
+    <span><i class="far fa-question-circle fa-5x m-2" data-toggle="modal" data-target="#exampleModalScrollable"></i>
+        About</span>
     <!-- header starts here -->
     <header class="m-5">
         <h1 class="text-center m-5"><i class="fas fa-shopping-cart mr-2"></i> ShopNow</h1>
@@ -29,7 +31,7 @@
     <h3 class="text-center">Select your category:</h3>
 
     <!-- Buttons -->
-    <div class="col-sm-8 mx-auto">
+    <div class=" align col-sm-8 mx-auto">
         <div class="row">
             <div class="col-sm-3 mr-2">
                 <button type="button" onclick="window.location.href = 'grocery.html#grocery';"
@@ -49,8 +51,81 @@
             </div>
         </div>
     </div>
-
-
+    <!-- Buttons end here -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title text-center" id="exampleModalScrollableTitle">Information about Project</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>What things I made use of:</p>
+                    <ul>
+                        <li>
+                            HTML5/CSS3/Bootstrap4
+                        </li>
+                        <li>
+                            Javascript
+                        </li>
+                        <li>
+                            Font Awesome Icons
+                        </li>
+                        <li>
+                            Google Fonts
+                        </li>
+                        <li>
+                            SEO (as it has a score of 100 on PageSpeed Insights by Google).
+                        </li>
+                    </ul>
+                    <p>How I made it:</p>
+                    <ul>
+                        <li>
+                            Made a Bootstrap cards to show items.
+                        </li>
+                        <li>
+                            Used Bootstrap Columns for positioning cards.
+                        </li>
+                        <li>
+                            Made an JSON.
+                        </li>
+                        <li>
+                            Function get data and make a list of items in cart.
+                        </li>
+                        <li>
+                            Calculation of total bill.
+                        </li>
+                        <li>
+                            Javascript checks are made on checkout page form.
+                        </li>
+                    </ul>
+                    <p>You can:</p>
+                    <ul>
+                        <li>
+                            Select the category.
+                        </li>
+                        <li>
+                            Choose the items.
+                        </li>
+                        <li>
+                            See your cart that shows the Bill too.
+                        </li>
+                        <li>
+                            Fill the checkout Page.
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" style="width:100px;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal ends here -->
     <!-- script tags -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
