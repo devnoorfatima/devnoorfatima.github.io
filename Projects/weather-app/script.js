@@ -36,7 +36,6 @@ function getFarenheit(){
     $("#temperature").html(((parseInt($("#temperature").text()) * 1.8) + 32).toFixed(1)+ '°F');
     $('.cel').css("opacity", "0.5");
     $('.far').css("opacity", "1");
-    $('.far').css("color", "#fff");
     $(".far").prop("disabled", true);
     $(".cel").prop("disabled", false);
 };
