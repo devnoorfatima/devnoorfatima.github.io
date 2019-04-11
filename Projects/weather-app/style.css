@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+body{
+    font-family: Concert One;
+    color: black;
+    background-color: rgb(98, 102, 105);
+}
+#temperature{
+    font-size: 60px;
+}
+.cel{
+    font-size: 40px;
+    color: rgb(3, 3, 3);
+}
+.cel:hover{
+    color: rgb(7, 7, 7);
+}
+.far{
+    font-size: 40px;
+    color: black !important;
+    opacity:0.5; 
+} 
+.far:hover{
+    color: rgb(0, 0, 0);
+}
