@@ -11,39 +11,9 @@ $.getJSON('https://geoip-db.com/json/')
 
 //Get JSON method
 
-//   $.getJSON("https://fcc-weather-api.glitch.me/api/current?lat=" + lat + "&lon=" + lon)
-//   .done(function(data){
-//       $('#temperature').html(data.main.temp.toFixed(1)+ "°C");
-//       $('#type').html(`${data.weather[0].main}`);
-    
-//     if(data.main.temp<=1){
-//        $('body').css("background","url(./snow.jpeg) fixed no-repeat");
-//        $('body').css("background-size","cover");
-//     }
-//     else if(data.main.temp<=20){
-//        $('body').css("background","url(./cold.jpeg) fixed no-repeat");
-//        $('body').css("background-size","cover");
-
-//     }
-//     else if(data.main.temp<=35){
-//         $('body').css("background","url(./mild.jpeg) fixed no-repeat");
-//         $('body').css("background-size","cover");
-//     }
-//     else if(data.main.temp>35){
-//         $('body').css("background","url(./sunny.jpeg) fixed no-repeat");
-//         $('body').css("background-size","cover");
-//     }
-// })
-// });
-
-
-//Javascript Fetch method
-
-
-fetch('https:fcc-weather-api.glitch.me/api/current?lat='+lat+'&lon='+lon)
-  .then((resp) => resp.json())
-  .then(function(data) {
-   $('#temperature').html(data.main.temp.toFixed(1)+ "°C");
+  $.getJSON("https://fcc-weather-api.glitch.me/api/current?lat=" + lat + "&lon=" + lon)
+  .done(function(data){
+      $('#temperature').html(data.main.temp.toFixed(1)+ "°C");
       $('#type').html(`${data.weather[0].main}`);
     
     if(data.main.temp<=1){
@@ -64,7 +34,37 @@ fetch('https:fcc-weather-api.glitch.me/api/current?lat='+lat+'&lon='+lon)
         $('body').css("background-size","cover");
     }
 })
-});  
+});
+
+
+//Javascript Fetch method
+
+
+// fetch('https:fcc-weather-api.glitch.me/api/current?lat='+lat+'&lon='+lon)
+//   .then((resp) => resp.json())
+//   .then(function(data) {
+//    $('#temperature').html(data.main.temp.toFixed(1)+ "°C");
+//       $('#type').html(`${data.weather[0].main}`);
+    
+//     if(data.main.temp<=1){
+//        $('body').css("background","url(./snow.jpeg) fixed no-repeat");
+//        $('body').css("background-size","cover");
+//     }
+//     else if(data.main.temp<=20){
+//        $('body').css("background","url(./cold.jpeg) fixed no-repeat");
+//        $('body').css("background-size","cover");
+
+//     }
+//     else if(data.main.temp<=35){
+//         $('body').css("background","url(./mild.jpeg) fixed no-repeat");
+//         $('body').css("background-size","cover");
+//     }
+//     else if(data.main.temp>35){
+//         $('body').css("background","url(./sunny.jpeg) fixed no-repeat");
+//         $('body').css("background-size","cover");
+//     }
+// })
+// });  
 
 function getFarenheit(){
   $("#temperature").html(((parseInt($("#temperature").text()) * 1.8) + 32).toFixed(1)+ '°F');
