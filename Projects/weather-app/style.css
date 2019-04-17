@@ -2,7 +2,7 @@
 body{
     font-family: Concert One;
     color: black;
-    background-color: rgb(98, 102, 105);
+    background-color: rgb(255, 255, 255);
 }
 #temperature{
     font-size: 60px;
@@ -14,11 +14,11 @@ body{
 .cel:hover{
     color: rgb(7, 7, 7);
 }
-.far{
+.faren{
     font-size: 40px;
     color: black !important;
     opacity:0.5; 
 } 
-.far:hover{
+.faren:hover{
     color: rgb(0, 0, 0);
 }

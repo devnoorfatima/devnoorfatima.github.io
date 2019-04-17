@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- font awesome -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <!-- bootstrap cdn -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,6 +16,10 @@
 </head>
 
 <body>
+  <span>
+      <i class="far fa-question-circle fa-4x m-2" data-toggle="modal" data-target="#exampleModalScrollable"></i>
+      About
+  </span>
   <div>
     <h1 class="text-center m-3">Local Weather App</h1>
   </div>
@@ -24,21 +28,58 @@
         <h3 id="country"></h3>
     </div>  
     <div class="col-sm-4 p-0">
-        <h3 id="city"></h3>
+      <h3 id="city"></h3>
     </div>
     </div>
     <div class="text-center">
       <div id="buttons">
           <button id="cel" class="btn cel" onclick="getCelcius()">°C</button> 
-          <button id="far" class="btn far" onclick="getFarenheit()" style="color:black;">°F</button>
+          <button class="btn faren" onclick="getFarenheit()" style="color:black;">°F</button>
         </div>
         <h3 id="temperature"></h3>
         <h4 id="type"></h4>
     </div>  
-    
   
-
-
+<!-- modal starts  -->
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">Information about Project</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <p>What I used:</p>
+       <ul>
+         <li>JSON fetch method</li>
+         <li>Javascript Fetch method</li>
+         <li>JQuery</li>
+         <li>Unsplash images for various backgrounds</li>
+         <li>Google Fonts</li>
+         <li>Font Awesome</li>
+       </ul> 
+       <p>Data fetching by Api:</p>
+       <ul>
+         <li>Through fetch method</li>
+         <li>Through getJSON method</li>
+       </ul>
+       <p>How it works:</p>
+       <ul>
+         <li>It automatically detects your location.</li>
+         <li>Give the temperature</li>
+         <li>Shows the state of climate</li>
+         <li>Tells temperature in Farenheit and Celcius</li>
+       </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal ends -->
 
   <!-- script tags -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
