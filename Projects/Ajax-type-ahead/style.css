@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-html {
+body {
     box-sizing: border-box;
     background: #83dacb;
-    font-family: 'helvetica neue';
+    font-family: Poppins;
     font-size: 20px;
     font-weight: 200;
-  }
-  body{
-    font-family: Poppins;
   }
   
   *, *:before, *:after {
@@ -86,4 +83,3 @@ html {
   .hl {
     background: #62db9f;
   }
-  
