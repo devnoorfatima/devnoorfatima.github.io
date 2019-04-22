@@ -24,5 +24,7 @@ function calculatePrice() {
     if (distance.value && efficiency.value && fuel.value) {
         fuelNeeded.value = Math.round(distance.value / efficiency.value);
         cost.value = Math.round(fuelNeeded.value * fuel.value);
+    }else{
+        alert('Please enter some values');
     }
 }

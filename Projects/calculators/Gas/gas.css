@@ -25,6 +25,7 @@ h1 {
     background-color: rgb(118, 122, 121);
     border-radius: 10px;
     border: 5px double rgb(66, 65, 65);
+    margin: 2rem;
 }
 label{
     margin-bottom:0; 
