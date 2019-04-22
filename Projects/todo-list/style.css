@@ -28,7 +28,7 @@ h1 {
     text-align: right;
     color: rgb(235, 186, 235);
 }
-h5{
+h4{
     text-align: center;
 }
 .field {
@@ -86,7 +86,6 @@ button:focus {
     margin-left: 1rem;
 }
 
-/* When clicked on, add a background color and strike out text */
 ol li.checked {
     text-decoration: line-through;
     text-align: center;
@@ -96,14 +95,21 @@ ol li.checked {
 .info{
     background-color: rgba(105, 101, 101, 0.4);
     width: 25rem;
+    font-size: 18px;
     border:3px solid rgb(177, 175, 175); 
     border-radius: 10px;
     float: left;
+    padding: 10px;
+}
+.info li{
+    color: black;
+    font-size: 18px;
 }
 
 /* media query  */
 
 @media (min-width: 800px) {
+   
     body {
         background: url(./bg.jpeg);
         background-repeat: no-repeat;
@@ -136,7 +142,18 @@ ol li.checked {
     }
 }
 
+@media (max-width: 975px) {
+    .info{
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+}
 @media (max-width: 483px) {
+   .info{
+       margin-top: 20px;
+       width: -webkit-fill-available;
+   }
     input {
         width: -webkit-fill-available;
     }
