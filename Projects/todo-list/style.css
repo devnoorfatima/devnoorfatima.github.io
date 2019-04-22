@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-body{
+
+body {
     font-weight: bolder;
     font-size: 25px;
     font-family: Poppins;
@@ -8,16 +9,18 @@ body{
     background-size: cover;
     height: 100vh;
 }
+
 .rise span {
     display: inline-block;
-    transition : transform 0.3s;
-    }
-    .rise span:hover {
-        color: rgb(255, 255, 53);
-        transform: translateY(-20px) rotate(10deg) scale(1.5);
-    }
- 
-h1{
+    transition: transform 0.3s;
+}
+
+.rise span:hover {
+    color: rgb(255, 255, 53);
+    transform: translateY(-20px) rotate(10deg) scale(1.5);
+}
+
+h1 {
     font-family: Great vibes;
     margin-top: 3rem;
     letter-spacing: 5px;
@@ -25,7 +28,10 @@ h1{
     text-align: right;
     color: rgb(235, 186, 235);
 }
-.field{
+h5{
+    text-align: center;
+}
+.field {
     width: 25rem;
     float: right;
     padding: 2rem;
@@ -33,29 +39,34 @@ h1{
     border: 5px double rgb(238, 202, 238);
     border-radius: 10px;
 }
-input{
+
+input {
     width: 250px;
     height: 30px;
     margin-left: 0 10px 0 25px;
     border: none;
-    border-bottom: 3px solid rgb(235, 186, 235) ;
+    border-bottom: 3px solid rgb(235, 186, 235);
     border-radius: 5px;
     font-size: 25px;
     text-align: center;
     background-color: transparent;
     transition: background-color 5500s ease-in-out 0s;
 }
+
 input[type="text"] {
     color: rgb(255, 255, 0);
     -webkit-text-fill-color: rgb(255, 240, 30);
 }
-input:focus{
-outline: none;
+
+input:focus {
+    outline: none;
 }
-li{
+
+li {
     color: rgb(248, 248, 248);
 }
-button{
+
+button {
     font-size: 28px;
     border: 1px solid rgb(238, 202, 238);
     border-radius: 5px;
@@ -64,31 +75,43 @@ button{
 }
 
 
-button:focus{
+button:focus {
     outline: none;
-    }
-    
-.close{
-    color:rgb(255, 255, 255);
+}
+
+.close {
+    color: rgb(255, 255, 255);
     display: flex;
     float: right;
     margin-left: 1rem;
 }
-    /* When clicked on, add a background color and strike out text */
-    ol li.checked {
+
+/* When clicked on, add a background color and strike out text */
+ol li.checked {
     text-decoration: line-through;
     text-align: center;
-  }
- /* media query  */
-  
- @media (min-width: 800px) {
+}
+
+/* styles of info */
+.info{
+    background-color: rgba(105, 101, 101, 0.4);
+    width: 25rem;
+    border:3px solid rgb(177, 175, 175); 
+    border-radius: 10px;
+    float: left;
+}
+
+/* media query  */
+
+@media (min-width: 800px) {
     body {
         background: url(./bg.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
     }
-    .field{
+
+    .field {
         width: 25rem;
         float: right;
         margin-right: 3rem;
@@ -97,24 +120,28 @@ button:focus{
         border: 5px double rgb(252, 252, 25);
         border-radius: 10px;
     }
-    h1{
+
+    h1 {
         margin-top: 1rem;
         color: aqua;
     }
-    input{
-        border-bottom:3px solid rgb(255, 240, 31);
+
+    input {
+        border-bottom: 3px solid rgb(255, 240, 31);
     }
-    button{
+
+    button {
         background-color: yellow;
         color: aqua;
     }
 }
 
 @media (max-width: 483px) {
-   input{
-    width: -webkit-fill-available;
-   }
-   .field{
-    width: -webkit-fill-available;
-   }
+    input {
+        width: -webkit-fill-available;
+    }
+
+    .field {
+        width: -webkit-fill-available;
+    }
 }
