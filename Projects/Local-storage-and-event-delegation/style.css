@@ -9,6 +9,10 @@ html {
     text-align: center;
     font-family: Futura,"Trebuchet MS",Arial,sans-serif;
   }
+  body{
+    background-color: transparent;
+    text-align: center;
+  }
   
   *, *:before, *:after {
     box-sizing: inherit; 
@@ -18,12 +22,13 @@ html {
     fill:white;
     background: rgba(0,0,0,0.1);
     padding: 20px;
+    text-align: center;
     border-radius: 50%;
     width: 200px;
     margin-bottom: 50px;
   }
   
-  .wrapper {
+  .wrap {
     padding: 20px;
     max-width: 350px;
     background: rgba(255,255,255,0.95);
