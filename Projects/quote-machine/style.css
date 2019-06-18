@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body{
+    font-family: Poppins;
+    background:url(./bg2.jpeg) fixed no-repeat;
+    background-size: cover; 
+}
+
+.align{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+.btn{
+    border: 2px solid rgb(17, 17, 17);
+}
