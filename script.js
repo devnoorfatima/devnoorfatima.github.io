@@ -7,7 +7,9 @@ const name = ['Shopping Cart', 'Calculators', 'Weather App', 'Javascript Quiz', 
 const link = ['https://devnoorfatima.github.io/Projects/shopping-cart/', 'https://devnoorfatima.github.io/Projects/calculators/', 'https://devnoorfatima.github.io/Projects/weather-app/', 'https://devnoorfatima.github.io/Projects/Javascript-Quiz/', 'https://devnoorfatima.github.io/Projects/Ajax-type-ahead/',
     'https://devnoorfatima.github.io/Projects/todo-list/', 'https://devnoorfatima.github.io/Projects/quote-machine/', 'https://devnoorfatima.github.io/Projects/tomato-timer/', 'https://devnoorfatima.github.io/Projects/HTML-5-Canvas/', 'https://devnoorfatima.github.io/Projects/Javascript-image-gallery/', 'https://github.com/devnoorfatima/React/tree/master/indecision-app', 'https://devnoorfatima.github.io/Projects/CSS-Clock/'
 ]
-const code = ['']
+const code = ['https://github.com/devnoorfatima/Shopping-Cart', 'https://github.com/devnoorfatima/Calculators', 'https://github.com/devnoorfatima/Weather-App', 'https://github.com/devnoorfatima/devnoorfatima.github.io/tree/master/Projects/Javascript-Quiz', 'https://github.com/devnoorfatima/devnoorfatima.github.io/tree/master/Projects/Ajax-type-ahead', 'https://github.com/devnoorfatima/devnoorfatima.github.io/tree/master/Projects/todo-list',
+    'https://github.com/devnoorfatima/devnoorfatima.github.io/tree/master/Projects/quote-machine', 'https://github.com/devnoorfatima/devnoorfatima.github.io/tree/master/Projects/tomato-timer', 'https://github.com/devnoorfatima/devnoorfatima.github.io/tree/master/Projects/HTML-5-Canvas', 'https://github.com/devnoorfatima/devnoorfatima.github.io/tree/master/Projects/Javascript-image-gallery', 'https://github.com/devnoorfatima/React/tree/master/indecision-app', 'https://github.com/devnoorfatima/devnoorfatima.github.io/tree/master/Projects/CSS-Clock'
+]
 
 function addToPortfolio() {
     const portfolio = document.querySelector('#portfolio');
@@ -23,7 +25,7 @@ function addToPortfolio() {
             <a class='btn' href='${link[i]}' target='_blank'>Live Link</a>
         </div>
         <div class="col-sm-6">
-            <a class='btn' href='${link[i]}' target='_blank'>Code</a>
+            <a class='btn' href='${code[i]}' target='_blank'>Code</a>
         </div>
     </div>
 </div>
