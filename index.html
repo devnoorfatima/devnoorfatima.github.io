@@ -1,76 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137843206-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-137843206-1');
-</script>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- font awesome kit code -->
+    <script src="https://kit.fontawesome.com/113dd0e8da.js"></script>
+    <!-- style sheet  -->
     <link rel="stylesheet" href="style.css">
+
     <title>Portfolio</title>
 </head>
 
 <body>
-    <h1>Portfolio website is Coming Soon</h1>
-    <h3>Till then you can have a look at some of my projects:</h3>
-    <div class="row mr-0">
-        <div class="col-lg-12">
-            <a class="btn btn-light" href="https://devnoorfatima.github.io/Projects/Ajax-type-ahead/" role="button">Ajax
-                Type Ahead</a>
-            <a class="btn btn-light" href="https://devnoorfatima.github.io/Projects/Local-storage-and-event-delegation/"
-                role="button">Local Storage</a>
+    <!-- navbar starts -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-light">
+        <a class="navbar-brand ml-3" href="#">Noor Fatima</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar ends -->
+    <!-- Introduction part starts here -->
+    <div id="intro" class="text-center">
+        <h1 class="text-white font-weight-bold">Hi! I am Noor Fatima</h1>
+        <h3 class="mt-3 text-white font-weight-bold">Front-end Web Developer</h3>
+
+    </div>
+    <!-- Introduction part ends here -->
+    <!-- About part starts here -->
+    <div id="about" class="pt-4 pb-5 p-2">
+        <h2 id="font" class="text-center mt-4 text-dark">Me and My Shadow</h2>
+        <hr>
+        <div class="text-center">
+            <p>I am a self-taught web developer. <br>
+                A person who took a self-initiative to learn web-development.<br>
+                Being a self-taught web dev most of my learning comes from online courses. <br>
+                From FreeCodeCamp, Udemy, Wesbos and Youtube tutorials.Other than that I believe <br>
+                in practicing more than cramming or merely watching tutorials. So, I have <br>
+                made more than 50 Projects to practice Javascript. Making the <br>
+                projects is the best way to hone your skills.
+            </p>
+            <p>
+                I designed and developed websites using <br>
+                HTML,CSS,SASS/SCSS,Bootstrap,Javascript,jQuery,Api fetching <br>
+                Linux,VSCode,Github,Git,Font Awesome.
+            </p>
+        </div>
+        <div class=" text-center" data-target="#skills">
+            <a href="#skills" class="text-dark pt-5 fas fa-chevron-circle-down fa-5x"></a>
         </div>
     </div>
-    <div class="row mr-0">
-        <div class="col-lg-12">
-            <a class="btn btn-light" href="https://devnoorfatima.github.io/Projects/Javascript-Quiz/"
-                role="button">Javascript Quiz</a>
-            <a class="btn btn-light" href="https://devnoorfatima.github.io/Projects/calculators/"
-                role="button">Calculators</a>
+    <!-- About part ends here -->
+    <!-- Skills part starts here  -->
+    <div id="skills">
+        <h2 class="text-center pt-4"> Skills I have</h2>
+        <hr class="bg-secondary">
+        <div class="row mr-0 pt-3 text-center pb-5">
+            <div class="col-6 col-sm-3">
+                <i class="fab fa-html5 text-danger fa-5x"></i>
+            </div>
+            <div class="col-6 col-sm-3 ">
+                <i class="fab fa-css3-alt text-info fa-5x"></i>
+            </div>
+            <div class="col-6 col-sm-3">
+                <i class="fab fa-sass pink fa-5x"></i>
+            </div>
+            <div class="col-6 col-sm-3">
+                <i class="fab fa-bootstrap purple fa-5x"></i>
+            </div>
+        </div>
+
+        <div class="row mr-0 text-center pb-5 pt-5">
+            <div class="col-6 col-sm-3">
+                <i class="fab fa-js text-warning fa-5x"></i>
+            </div>
+            <div class="col-6 col-sm-3">
+                <i class="fab fa-linux text-dark fa-5x"></i>
+            </div>
+            <div class="col-6 col-sm-3">
+                <i class="fab fa-github text-dark fa-5x"></i>
+            </div>
+            <div class="col-6 col-sm-3">
+                <i class="fas fa-code-branch text-danger fa-5x"></i>
+            </div>
+        </div>
+
+        <div class="row mr-0 text-center pb-5 pt-5">
+            <div class="col-6 col-sm-3">
+                <i class="fas fa-arrow-alt-circle-down fa-5x"></i>
+            </div>
+            <div class="col-6 col-sm-3">
+                <i class="fab fa-font-awesome-flag text-white fa-5x"></i>
+            </div>
+            <div class="col-6 col-sm-3">
+                <img class="symbol" src="./vs.png" alt="symbol of vs code">
+            </div>
+            <div class="col-6 col-sm-3">
+                <img class="symbol" src="./jq.png" alt="symbol of jQuery">
+            </div>
+        </div>
+
+    </div>
+    <!-- Skills part ends here -->
+    <!-- Portfolio part starts -->
+    <div id="projects" class="mb-4">
+        <h2 class="text-center p-4 text-info">PORTFOLIO</h2>
+        <h5 class="text-center m-3 text-info">My work you may want to see.</h5>
+        <hr class="bg-info">
+        <div id="portfolio" class="row mr-0 text-center">
         </div>
     </div>
+    <!-- Portfolio ends here -->
+    <!-- contact section parts  -->
+    <div id="contact" class="text-white">
+        <h2 class="text-center text-white pt-4 pb-2">Contact</h2>
+        <hr class="bg-white">
+        <form class="text-center"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSdlHE4UzJA6V_zZzVEtGl5qpQaxAeFX5girBJlqJLhPQkrGZA/formResponse"
+            method="POST">
+            <div class="row mr-0 ">
+                <div class="text-center col-sm-6">
+                    <div class="my-3">
+                        <label class="col-sm-3 text-right" for="name">Name: </label>
+                        <input name="entry.2005620554" class="col-sm-6 inp" type="text">
+                    </div>
+                    <div class="my-3">
+                        <label class="col-sm-3 text-right" for="email">Email: </label>
+                        <input name="entry.1045781291" class="col-sm-6 inp" type="email">
+                    </div>
+                    <div class="my-3">
+                        <label class="col-sm-3 text-right" for="number">Phone Number: </label>
+                        <input class="col-sm-6 inp" type="tel" name="entry.1166974658">
+                    </div>
 
-    <div class="row mr-0">
-        <div class="col-lg-12">
-            <a class="btn btn-light" href="https://devnoorfatima.github.io/Projects/tomato-timer/" role="button">Tomato
-                Timer</a>
-            <a class="btn btn-light" href="https://devnoorfatima.github.io/Projects/todo-list/" role="button">Todo
-                List</a>
+                </div>
+                <div class="col-sm-5">
+                    <label class="col-sm-3 margin" for="msg">Message </label> <br>
+                    <textarea name="entry.839337160" cols="30"  rows="5"></textarea>
+                </div>
+            </div>
+            <div>
+                <button class="text-center btn submit my-3" type="submit">Submit</button>
+            </div>
+        </form>
+        <div class="icons">
+            <div class="row text-center mr-0">
+                <div class="col-sm-3 my-5 mx-auto">
+                    <a href="https://twitter.com/devnoorfatima" target="_blank"><i
+                            class="text-white fab fa-twitter-square fa-5x "></i></a>
+                </div>
+                <div class="col-sm-3 my-5 mx-auto">
+                    <a href="https://github.com/devnoorfatima" target="_blank"><i
+                            class="text-white fab fa-github-square fa-5x"></i></a>
+                </div>
+                <div class="col-sm-3 my-5 mx-auto">
+                    <a href="https://codepen.io/dashboard/" target="_blank"><i
+                            class="text-white fab fa-codepen fa-5x"></i></a>
+                </div>
+            </div>
         </div>
+
     </div>
-    <div class="row mr-0">
-        <div class="col-lg-12">
-            <a class="btn btn-light" href="https://devnoorfatima.github.io/Projects/shopping-cart/">Online Shopping Page</a>       
-            <a class="btn btn-light" href="https://devnoorfatima.github.io/Projects/weather-app/">Local Weather App</a>
-        </div>
-    </div> 
-    <h2>These are not all of my projects to have a look on all of my projects you can checkout my Git Profile.</h2>
-    <a href="https://github.com/devnoorfatima"><i class="fab fa-github fa-5x" style="color:black"></i></a>
 
-    <h3>Github</h3>
+    <!-- contact section ends here -->
+    <!-- script tag -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
 </body>
 
 </html>
