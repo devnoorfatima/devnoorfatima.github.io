@@ -167,7 +167,7 @@ textarea {
         width: inherit;
     }
     .portfolio-item{
-        margin : 0 1.5rem !important;
+        margin : 1em 1.5rem !important;
     }
 }
 
@@ -185,8 +185,4 @@ textarea {
     textarea {
         width: inherit;
     }
-}
-
-@media screen and (max-width: 471px) {
-   
 }
