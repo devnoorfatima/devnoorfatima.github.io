@@ -152,3 +152,10 @@ textarea{
      width: inherit;
  }
 }
+
+@media screen and (max-width: 1000px) {
+    #about{
+        background-image: none;
+        background-color: white;
+    }
+   }
