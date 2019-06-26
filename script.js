@@ -17,18 +17,18 @@ function addToPortfolio() {
     for (let i = 0; i < name.length; i++) {
         html.push(`
        
-    <div class="col-md-3 mx-5 my-3 p-3 portfolio-item">
-    <img class="img-responsive shot" src="${imgSrc[i]}">
-    <h4 class='my-3'>${name[i]}</h4>
-    <div class="row mr-0 text-center ">
-        <div class="col-sm-6">
-            <a class='btn' href='${link[i]}' target='_blank'>Live Link</a>
-        </div>
-        <div class="col-sm-6">
-            <a class='btn' href='${code[i]}' target='_blank'>Code</a>
-        </div>
-    </div>
-</div>
+     <div class="col-sm-3 mx-5 my-3 p-3 portfolio-item">
+     <img class="img-responsive shot" src="${imgSrc[i]}">
+     <h4 class='my-3'>${name[i]}</h4>
+     <div class="row mr-0 text-center ">
+         <div class="col-sm-6">
+             <a class='btn' href='${link[i]}' target='_blank'>Live Link</a>
+         </div>
+         <div class="col-sm-6">
+             <a class='btn' href='${code[i]}' target='_blank'>Code</a>
+         </div>
+     </div>
+ </div>
         `)
     }
     portfolio.innerHTML = html.join('');
