@@ -176,13 +176,21 @@ textarea {
         background-image: none;
         background-color: white;
     }
+    textarea{
+        width: inherit;
+    }
 }
 
 @media screen and (max-width: 471px) {
     body{
         width: inherit;
     }
-    textarea {
+    /* textarea {
         width: inherit;
+    } */
+}
+@media screen and (max-width: 885px) {
+    body{
+        width: fit-content;
     }
 }
