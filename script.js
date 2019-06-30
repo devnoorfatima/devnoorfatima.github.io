@@ -40,16 +40,24 @@ function addToPortfolio() {
 $(window).scroll(function() {    
     let scroll = $(window).scrollTop();
     if (scroll >= 1150) {
-        //clearHeader, not clearheader - caps H
         $(".portfolio-item").addClass("animated fadeInUp");
     }else {
         $(".portfolio-item").removeClass("animated fadeInUp");
     }
     if (scroll >= 1350) {
-        //clearHeader, not clearheader - caps H
         $(".text-info").addClass("animated zoomIn");
     }else {
         $(".text-info").removeClass("animated zoomIn");
+    }
+    if (scroll >= 809) {
+        $("i").addClass("animated fadeInUp");
+    }else {
+        $("i").removeClass("animated fadeInUp");
+    }
+    if (scroll >= 809) {
+        $(".symbol").addClass("animated fadeInUp");
+    }else {
+        $(".symbol").removeClass("animated fadeInUp");
     }
 });
 
