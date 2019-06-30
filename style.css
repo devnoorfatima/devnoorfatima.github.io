@@ -131,6 +131,22 @@ textarea {
     margin-right: 14em;
 }
 
+/* animations */
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
+
 /* media query */
 @media screen and (max-width: 575px) {
     body {

@@ -11,6 +11,9 @@ const code = ['https://github.com/devnoorfatima/Shopping-Cart', 'https://github.
     'https://github.com/devnoorfatima/devnoorfatima.github.io/tree/master/Projects/quote-machine', 'https://github.com/devnoorfatima/devnoorfatima.github.io/tree/master/Projects/tomato-timer', 'https://github.com/devnoorfatima/devnoorfatima.github.io/tree/master/Projects/HTML-5-Canvas', 'https://github.com/devnoorfatima/devnoorfatima.github.io/tree/master/Projects/Javascript-image-gallery', 'https://github.com/devnoorfatima/React/tree/master/indecision-app', 'https://github.com/devnoorfatima/devnoorfatima.github.io/tree/master/Projects/CSS-Clock'
 ]
 
+// window.onscroll = function (e) {
+//     console.log(window.scrollY); // Value of scroll Y in px
+// };
 function addToPortfolio() {
     const portfolio = document.querySelector('#portfolio');
     const html = [];
@@ -33,4 +36,21 @@ function addToPortfolio() {
     }
     portfolio.innerHTML = html.join('');
 }
+
+$(window).scroll(function() {    
+    let scroll = $(window).scrollTop();
+    if (scroll >= 1150) {
+        //clearHeader, not clearheader - caps H
+        $(".portfolio-item").addClass("animated fadeInUp");
+    }else {
+        $(".portfolio-item").removeClass("animated fadeInUp");
+    }
+    if (scroll >= 1350) {
+        //clearHeader, not clearheader - caps H
+        $(".text-info").addClass("animated zoomIn");
+    }else {
+        $(".text-info").removeClass("animated zoomIn");
+    }
+});
+
 window.addEventListener('DOMContentLoaded', addToPortfolio);
