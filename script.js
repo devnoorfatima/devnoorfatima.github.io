@@ -49,15 +49,17 @@ $(window).scroll(function() {
     }else {
         $(".text-info").removeClass("animated zoomIn");
     }
-    if (scroll >= 809) {
-        $("i").addClass("animated fadeInUp");
+    if (scroll >= 715) {
+        $(".anim").addClass("animated fadeInUp");
     }else {
-        $("i").removeClass("animated fadeInUp");
+        $(".anim").removeClass("animated fadeInUp");
     }
-    if (scroll >= 809) {
+    if (scroll >= 715) {
         $(".symbol").addClass("animated fadeInUp");
+        $(".animation").addClass("animated zoomIn");
     }else {
         $(".symbol").removeClass("animated fadeInUp");
+        $(".animation").removeClass("animated zoomIn");
     }
 });
 
