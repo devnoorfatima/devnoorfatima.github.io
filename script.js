@@ -61,6 +61,11 @@ $(window).scroll(function() {
         $(".symbol").removeClass("animated fadeInUp");
         $(".animation").removeClass("animated zoomIn");
     }
+    if (scroll >= 715) {
+        $("#font").addClass("animated fadeInUp");
+    }else {
+        $("#font").removeClass("animated fadeInUp");
+    }
 });
 
 window.addEventListener('DOMContentLoaded', addToPortfolio);
