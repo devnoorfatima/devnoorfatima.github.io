@@ -1,5 +1,5 @@
-const imgSrc = ['./shots/1-min.png ', './shots/2-min.png', './shots/3-min.png', './shots/4-min.png', './shots/5-min.png',
-    './shots/6-min.png', './shots/7-min.png', './shots/8-min.png', './shots/9-min.png', './shots/10-min.png', './shots/11-min.png', './shots/12-min.png'
+const imgSrc = ['./shots/1.png ', './shots/2.png', './shots/3.png', './shots/4.png', './shots/5.png',
+    './shots/6.png', './shots/7.png', './shots/8.png', './shots/9.png', './shots/10.png', './shots/11.png', './shots/12.png'
 ]
 const name = ['Shopping Cart', 'Calculators', 'Weather App', 'Javascript Quiz', 'Ajax Type Ahead',
     'Todo List', 'Quote Machine', 'Tomato Timer', 'HTML5 Canvas', 'Image Gallery', 'Indecision App', 'CSS Clock'
