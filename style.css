@@ -69,6 +69,7 @@ hr {
 /* portfolio section */
 #projects{
     margin: 0 auto;
+    font-size: 25px;
 }
 .shot {
     height: 250px;
