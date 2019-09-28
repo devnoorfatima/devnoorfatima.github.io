@@ -24,7 +24,7 @@ $.getJSON('https://geoip-db.com/json/')
           $('body').css("background-size", "cover");
 
         } else if (data.main.temp <= 35) {
-          $('body').css("background", "url(./mild.jpeg) fixed no-repeat");
+          $('body').css("background", "url(./mild.jpg) fixed no-repeat");
           $('body').css("background-size", "cover");
         } else if (data.main.temp > 35) {
           $('body').css("background", "url(./sunny.jpeg) fixed no-repeat");
